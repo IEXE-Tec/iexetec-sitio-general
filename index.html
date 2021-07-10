@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zilla+Slab:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="demos/yoga/yoga.css" type="text/css" />
+    <link rel="stylesheet" href="demos/headphones/headphones.css" type="text/css" />
+    <link rel="stylesheet" href="demos/recipes/recipes.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="demos/furniture/furniture.css"
+      type="text/css"
+    />
+  <!--FAVICONS PARA LOS ÍCONOS
+    =============================================
+    -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://static.iexetec.com/mba/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://static.iexetec.com/mba/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://static.iexetec.com/mba/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://static.iexetec.com/mba/favicons/manifest.json"
+    />
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+    <!-- / -->
+
+    <!-- Document Title
+	============================================= -->
+    <title>IEXE Tec  | IEXE Tec</title>
+  </head>
+
+  <body class="stretched">
+    <!-- Cart Panel Background
+	============================================= -->
+    <div class="body-overlay"></div>
+
+    <!-- Cart Side Panel
+	============================================= -->
+    <div id="side-panel" class="bg-white">
+    </div>
+
+    <!-- Modal alerta bottom de la landing -->
+    <div class="modal-registro mfp-hide" id="modal-registro">
+      <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+      <div class="card mx-auto" style="max-width: 400px">
+        <div class="card-header py-3 bg-transparent center">
+          <h3 class="mb-0 font-weight-normal">
+            ¡DEJA TUS DATOS PARA SOLICITAR UNA BECA!
+          </h3>
+        </div>
+        <div class="card-body mx-auto p-5">
+          <p class="statusMsg"></p>
+          <form
+            id="requestBCall"
+            name="login-form"
+            class="mb-0 row"
+            method="post"
+            data-alert-type="inline"
+          >
+            <div class="col-12">
+              <input
+                type="text"
+                class="required form-control form-control-lg not-dark"
+                id="nombre"
+                name="nombre"
+                value=""
+                placeholder="Tu Nombre"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="required form-control form-control-lg not-dark"
+                id="correo"
+                name="correo"
+                value=""
+                placeholder="Correo electrónico"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="tel"
+                id="tel"
+                name="telefono"
+                class="required form-control form-control-lg not-dark phone"
+                placeholder="Tu Teléfono*"
+                required="required"
+                data-validation-required-message="Porfavor Ingresa tu celular."
+              />
+            </div>
+
+            <div class="col-12 mt-4">
+              <button
+                class="button btn-secondary bg-secondary btn-block m-0"
+                id="login-form-submit"
+                name="login-form-submit"
+                value="submit"
+              >
+                Mandar Datos
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+
+      <!-- Header
+		============================================= -->
+      <header id="header" class="header-size-sm border-bottom-0">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row justify-content-lg-between">
+              <!-- Logo
+						============================================= -->
+              <div id="logo" class="mx-0 mr-lg-5 order-2 order-lg-1">
+                <a
+                  href="index.html"
+                  class="standard-logo pr-2"
+                  data-dark-logo="images/logo-dark.png"
+                  ><img src="images/iexe-tec-logo.png" alt="Canvas Logo"
+                /></a>
+                <a
+                  href="index.html"
+                  class="retina-logo pr-2"
+                  data-dark-logo="images/logo-dark@2x.png"
+                  ><img src="images/iexe-tec-logo@2x.png" alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div class="header-misc order-3">
+                <a href="https://educacion.iexe.edu.mx/login/" data-target="_blank"class="btn text-smalle btn-secondary bg-secondary px-4 py-2 rounded-pill"><span class="d-none d-md-inline ms-2">Acceso a Estudiantes</span></a>
+              </div>
+
+              <!-- Mobile Menu Icon
+						============================================= -->
+              <div id="primary-menu-trigger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <defs>
+                    <style>
+                      .a,
+                      .c {
+                        fill: none;
+                      }
+                      .b {
+                        fill: var(--themecolor);
+                        opacity: 0.2;
+                      }
+                      .c,
+                      .d {
+                        stroke: var(--themecolor);
+                      }
+                      .c {
+                        stroke-miterlimit: 10;
+                        stroke-width: 14px;
+                      }
+                      .d {
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 13px;
+                      }
+                    </style>
+                  </defs>
+                  <rect class="a" width="24" height="24" />
+                  <circle
+                    class="b"
+                    cx="96"
+                    cy="96"
+                    r="96"
+                    transform="translate(32 32)"
+                  />
+                  <circle
+                    class="c"
+                    cx="96"
+                    cy="96"
+                    r="96"
+                    transform="translate(32 32)"
+                  />
+                  <line class="d" x2="85" transform="translate(86 127)" />
+                  <line class="d" x2="85" transform="translate(86 97)" />
+                  <line class="d" x2="85" transform="translate(86 159)" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="var(--themecolor)"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle cx="128" cy="128" r="96" opacity="0.2"></circle>
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="96"
+                    fill="none"
+                    stroke="var(--themecolor)"
+                    stroke-miterlimit="10"
+                    stroke-width="16"
+                  ></circle>
+                  <line
+                    x1="160"
+                    y1="96"
+                    x2="96"
+                    y2="160"
+                    fill="none"
+                    stroke="var(--themecolor)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="160"
+                    y1="160"
+                    x2="96"
+                    y2="96"
+                    fill="none"
+                    stroke="var(--themecolor)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                </svg>
+              </div>
+
+            <!-- Primary Navigation
+						============================================= -->
+            <nav class="primary-menu with-arrows order-lg-1 order-last px-0">
+              <ul class="menu-container">
+                <li class="menu-item current">
+                  <a class="menu-link" href="index.html">
+                    <div>Inicio</div>
+                  </a>
+                </li>
+                <li class="menu-item mega-menu mega-menu-full">
+                  <a href="curso-individual.html" class="menu-link"
+                    ><div>Programas</div></a
+                  >
+
+                  <!-- Menu DropDown
+                ============================================= -->
+                  <div class="mega-menu-content border-bottom-0">
+                    <div class="container">
+                      <div class="row">
+                        <ul
+                          class="
+                            sub-menu-container
+                            mega-menu-column
+                            col-lg-auto
+                          "
+                        >
+                          <li class="menu-item">
+                            <a class="menu-link" href="https://miaa.iexe.edu.mx/"
+                              ><div>
+                                MIAA
+                              </div></a
+                            >
+                          </li>
+                        </ul>
+                        <ul
+                          class="
+                            sub-menu-container
+                            mega-menu-column
+                            col-lg-auto
+                          "
+                        >
+                          <li class="menu-item">
+                            <a class="menu-link" href="https://mcda.iexe.edu.mx/"
+                              ><div>
+                                MCDA
+                              </div></a
+                            >
+                          </li>
+                        </ul>
+                        <ul
+                          class="
+                            sub-menu-container
+                            mega-menu-column
+                            col-lg-auto
+                          "
+                        >
+                          <li class="menu-item">
+                            <a class="menu-link" href="https://mbatec.iexe.edu.mx/"
+                              ><div>
+                                MBA
+                              </div></a
+                            >
+                          </li>
+                        </ul>
+                        <ul
+                          class="
+                            sub-menu-container
+                            mega-menu-column
+                            col-lg-auto
+                          "
+                        >
+                          <li class="menu-item">
+                            <a class="menu-link" href="https://miti.iexe.edu.mx/"
+                              ><div>
+                                MITI
+                              </div></a
+                            >
+                          </li>
+                        </ul>
+                        <ul
+                          class="
+                            sub-menu-container
+                            mega-menu-column
+                            col-lg-auto
+                          "
+                        ></ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a
+                    class="menu-link"
+                    href="maestros-iexetec.html"
+                  >
+                    <div>Nuestros Maestros</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    class="menu-link"
+                    href="https://www.iexe.edu.mx/admision"
+                  >
+                    <div>Admisiones</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="https://www.iexe.edu.mx/becas-2">
+                    <div>Becas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    class="menu-link"
+                    href="https://www.iexe.edu.mx/editorial"
+                  >
+                    <div>Editorial</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="demo-furniture-contact.html">
+                    <div>Facultad de investigación</div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- #primary-menu end -->
+
+              <!-- Top Search Form
+						============================================= -->
+              <form class="top-search-form" action="search.html" method="get">
+                <input
+                  type="text"
+                  name="q"
+                  class="form-control"
+                  value=""
+                  placeholder="Type &amp; Hit Enter.."
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+
+		<!-- Slider
+		============================================= -->
+    <section id="slider" class="slider-element revslider-wrap min-vh-40 min-vh-md-100 include-header">
+			<div class="slider-inner">
+
+				<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="distortion-addon" data-source="gallery" style="background:#000000;padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+					<div id="rev_slider_2_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
+						<ul>
+							<!-- SLIDE  -->
+							<li data-index="rs-8" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="demos/recipes/images/slider/1/100x50-bg.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+								<!-- MAIN IMAGE -->
+								<img src="demos/recipes/images/slider/dummy.png"  alt="Image" data-duration="4000" data-lazyload="images/slider-1.png" data-bgposition="center center"  data-bgparallax="4" class="rev-slidebg" data-no-retina>
+								<!-- LAYERS -->
+
+								<!-- LAYER NR. 1 -->
+								<h3 class="tp-caption font-primary tp-resizeme"
+									id="slide-8-layer-13-1"
+									data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+									data-y="['middle','middle','top','top']" data-voffset="['-200','-200','80','20']"
+									data-fontsize="['45','45','45','40']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+
+									data-type="text"
+									data-responsive_offset="on"
+
+									data-frames='[{"delay":2000,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+									data-textAlign="['inherit','inherit','inherit','inherit']"
+
+									style="z-index: 7; white-space: nowrap; font-size: 45px; line-height: 58px; letter-spacing: 0px; color: #1C4768;">¡Reescribe tu futuro!</h3>
+
+								<!-- LAYER NR. 2 -->
+								<p class="tp-caption Restaurant-Description  tp-resizeme"
+									id="slide-8-layer-13-2"
+									data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+									data-y="['middle','middle','top','top']" data-voffset="['-100','-100','180','80']"
+									data-fontsize="['24','24','24','24']"
+									data-lineheight="['27','27','27','27']"
+									data-fontweight="['400','400','400','400']"
+									data-width="['580','580','580','500']"
+									data-height="none"
+									data-visibility="['on', 'on', 'off', 'off']"
+
+									data-type="text"
+									data-responsive_offset="on"
+
+									data-frames='[{"delay":2500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+									data-textAlign="['left','left','center','center']"
+
+									style="z-index: 5; min-width: 580px; max-width: 580px; white-space: normal; letter-spacing: 0px;color: #1C4768;font-size: 20px; line-height:22px;">Damos a las personas las herramientas que necesitan para construir una carrera profesional. Adquiere conocimiento realmente valioso directamente de las y los consultores que día a día están poniendo a prueba la teoría y marcando un cambio verdadero.
+                </p>
+
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption tp-resizeme"
+									id="slide-8-layer-12"
+									data-x="['right','right','middle','middle']" data-hoffset="['0','0','0','0']"
+									data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-70','-10']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="normal"
+
+									data-type="image"
+									data-responsive_offset="on"
+
+									data-frames='[{"delay":2500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+									data-textAlign="['inherit','inherit','inherit','inherit']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+
+									style="z-index: 6;">
+								</div>
+								<a class="tp-caption rev-btn button button-large m-0 button-primary fw-bold button-circle"
+                href="#modal-registro" data-lightbox="inline"
+									id="slide-7-layer-13"
+									data-x="['left','left','middle','middle']" data-hoffset="['0','30','0','0']"
+									data-y="['middle','middle','bottom','bottom']" data-voffset="['200','200','30','0']"
+									data-width="auto"
+									data-height="auto"
+									data-type="button"
+									data-actions=''
+									data-responsive_offset="off"
+									data-responsive="off"
+									data-fontsize="['17', '17', '15', '15']"
+									data-lineheight="['40', '40', '36', '30']"
+									data-frames='[{"delay":3000,"speed":1600,"frame":"0","from":"x:50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#1C4768","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#1C4768","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:#fff;"}]'
+									style="z-index: 9; background-color: #1C4768; padding: 4px 28px"><span>Estoy interesado</span> <i class="icon-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="tp-bannertimer" style="height: 6px; background: rgba(6, 46, 83, 0.089);"></div>
+					</div>
+				</div><!-- END REVOLUTION SLIDER -->
+
+			</div>
+		</section>
+    <!-- Sub menu de la página
+      ============================================= -->
+      <div id="page-menu">
+        <div id="page-menu-wrap">
+          <div class="container">
+            <div class="page-menu-row">
+
+              <div class="page-menu-title"></span></div>
+
+              <nav class="page-menu-nav one-page-menu">
+                <ul class="page-menu-container">
+                  <li class="page-menu-item"><a href="#" data-href="#nuestros-programas"><div>Nuestros Programas</div></a></li>
+                  <li class="page-menu-item"><a href="#" data-href="#que-ofrecemos"><div>¿Qué ofrecemos?</div></a></li>
+                  <li class="page-menu-item"><a href="#" data-href="#aprende-mejores"><div>Aprende de los mejores</div></a></li>
+                  <li class="page-menu-item"><a href="#" data-href="#convenios-academicos"><div>Convenios Académicos</div></a></li>
+                  <li class="page-menu-item"><a href="#" data-href="#blog"><div>Blog</div></a></li>
+                  <li class="page-menu-item"><a href="#" data-href="#inscripciones"><div>Inscripciones</div></a></li>
+                </ul>
+              </nav>
+
+              <div id="page-menu-trigger"><i class="icon-reorder"></i></div>
+
+            </div>
+          </div>
+        </div>
+      </div><!-- #page-menu end -->
+      <!-- Content
+		============================================= -->
+    <section id="content">
+      <div class="content-wrap py-5">
+        <!--1. Sección de programas-->
+        <div id="nuestros-programas" class="section bg-transparent" style="padding: 100px 0">
+					<div class="container">
+            <h2 class="display-4 fw-normal text-center">
+              Nuestros
+              <span
+                data-animate="svg-underline-animated"
+                class="svg-underline nocolor"
+                ><span>Programas</span></span
+              >
+            </h2>
+						<div id="recipes-carousel" class="owl-carousel carousel-widget" data-margin="0" data-nav="true" data-pagi="false" data-items="1">
+							<div class="row g-0 align-items-stretch rounded shadow">
+								<div class="col-lg-5 rounded-start" style="background: url('images/programa-mba.png') no-repeat center center / cover; min-height: 300px">
+								</div>
+								<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end" style="padding: 80px 50px">
+									<h3>Maestría en Administración de Negocios y Tecnología</h3>
+									<p>obtendrás las habilidades prácticas y las herramientas tecnológicas más innovadoras que te ayudarán a impulsar tu carrera; con clases en línea y mentorías personalizadas impartidas por algunos de los mejores emprendedores y empresarios de México. IEXE Tec es tu puerta de entrada a una nueva carrera, ¿Y la mejor parte? ¡Pagarás muy poco!</p>
+									<div class="slider-features d-none d-sm-block my-3">
+										<ul class="list-unstyled">
+											<li class="d-inline-block me-4">
+												<h5 class="mb-0">3 Casos Prácticos por materia</h5>
+											</li>
+
+											<li class="d-inline-block me-4">
+												<h5 class="mb-0">15 Meses de clases</h5>
+											</li>
+
+											<li class="d-inline-block">
+												<h5 class="mb-0">3 Testimonios por materia</h5>
+											</li>
+										</ul>
+									</div>
+									<div><a href="https://mbatec.iexe.edu.mx/" class="button button-circle button-large m-0 fw-semibold nott ls0 text-end">Visitar Maestría<i class="icon-angle-right"></i></a></div>
+								</div>
+							</div>
+
+							<div class="row g-0 align-items-stretch rounded shadow">
+								<div class="col-lg-5 rounded-start dark" style="background: url('images/programa-mcda.png') no-repeat center center / cover; min-height: 300px">
+								</div>
+								<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end" style="padding: 80px 50px">
+									<h3>Máster en Ciencia de Datos Aplicada</h3>
+									<p>Este programa te desarrolla en un amplio panorama de estadística, álgebra, análisis de datos, programación e inteligencia de negocios, y te prepara con experiencia práctica en proyectos reales de desarrollo e investigación. Los graduados tendrán el privilegio de ser pioneros en el campo y aplicar sus conocimientos y habilidades en cualquier empresa, industria o sector público.</p>
+									<div><a href="https://mcda.iexe.edu.mx/" class="button button-circle button-large m-0 fw-semibold ls0 nott text-end">Ver Máster<i class="icon-angle-right"></i></a></div>
+								</div>
+							</div>
+              <div class="row g-0 align-items-stretch rounded shadow">
+								<div class="col-lg-5 rounded-start dark" style="background: url('images/programa-miaa.png') no-repeat center center / cover; min-height: 300px">
+								</div>
+								<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end" style="padding: 80px 50px">
+									<h3>Máster en Inteligencia Artificial Aplicada</h3>
+									<p>Este programa fue diseñado para preparar a profesionales altamente cualificados(as) en los conocimientos y herramientas de vanguardia para enfrentar los retos tecnológicos del mundo actual, propios de todos los campos de la vida.</p>
+									<div><a href="https://miaa.iexe.edu.mx/" class="button button-circle button-large m-0 fw-semibold ls0 nott text-end">Ver Máster<i class="icon-angle-right"></i></a></div>
+								</div>
+							</div>
+              <div class="row g-0 align-items-stretch rounded shadow">
+								<div class="col-lg-5 rounded-start dark" style="background: url('images/programa-miti.png') no-repeat center center / cover; min-height: 300px">
+								</div>
+								<div class="col-lg-7 d-flex justify-content-center flex-column rounded-end" style="padding: 80px 50px">
+									<h3>Maestría en Ingeniería en Tecnologías de la Información</h3>
+									<p>El objetivo de la maestría es que el alumno desarrolle una comprensión profunda no solo de los idiomas de programación que se requieren, sino también de la teoría y la práctica que hacen que un buen ingeniero de software sea excelente. Buscamos otorgar a las personas las herramientas que necesitan para reescribir su futuro.</p>
+									<div class="slider-features d-none d-sm-block my-3">
+										<ul class="list-unstyled">
+											<li class="d-inline-block me-4">
+												<h5 class="mb-0">200 Horas de práctica programando</h5>
+											</li>
+
+											<li class="d-inline-block me-4">
+												<h5 class="mb-0">3 Especialidades</h5>
+											</li>
+
+											<li class="d-inline-block">
+												<h5 class="mb-0">15 Meses</h5>
+											</li>
+										</ul>
+									</div>
+									<div><a href="https://miti.iexe.edu.mx/" class="button button-circle button-large m-0 fw-semibold ls0 nott text-end">Ver Maestría<i class="icon-angle-right"></i></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        <!-- 2. Sección de ¿qué ofrecemos?
+				============================================= -->
+				<div id="que-ofrecemos" class="container clearfix">
+					<div class="row justify-content-center gutter-30 col-mb-50">
+            <h2 class="display-4 fw-normal text-center">
+              ¿Qué
+              <span
+                data-animate="svg-underline-animated"
+                class="svg-underline nocolor"
+                ><span>ofrecemos?</span></span
+              >
+            </h2>
+						<div class="col-md-3">
+							<div class="card text-center shadow-sm card rounded-5">
+								<img src="images/practica-programando.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title">Plan de estudios diseñado por especialistas</h4>
+									<p class="card-text">está diseñado con aportes de
+                    expertos en computación, ciencia de datos, inteligencia
+                    artificial, ciberseguridad y tecnología.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card text-center shadow-sm card rounded-5">
+                <img src="images/mentorias-1-1.png" alt="...">
+								<div class="card-body">
+									<h4 class="card-title">Mentorias 1-1</h4>
+                  <p class="card-text">Los estudiantes reciben mentorías y asesoramiento de
+                    ellos para toda la vida que puedan presentarle nuevas
+                    oportunidades y ofrecer apoyo profesional de carrera.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="card text-center shadow-sm card rounded-5">
+								<img src="images/programa-digital.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title">Programa de Medio tiempo y 100% Digital</h4>
+									<p class="card-text">La comunidad mundial, así como el
+                    personal, están accesibles todo el tiempo utilizando
+                    todos los canales de comunicación modernos.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="card text-center shadow-sm card rounded-5">
+								<img src="images/bajo-costo.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title">Bajo Costo</h4>
+									<p class="card-text">Costo accesible y justo, menos de la mitad que otras
+                    universidades. ¡Nos aseguramos que tu inversión sea
+                    retribuida inmediatamente al ayudarte a encontrar un
+                    trabajo!</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+        <div class="container my-6">
+					<div class="block-hero-22 dark p-5 p-md-6 rounded-6" style="background-color: #1c4768">
+
+						<div class="row flex-row-reverse justify-content-between align-items-center mb-6">
+							<div class="col-lg-6 mb-5 mb-lg-0">
+								<img src="images/que-ofrecemos.png" alt="Image">
+							</div>
+							<div class="col-lg-5">
+								<h2>¿Qué ventajas encontrarás en los programas de IEXE Tec?</h2>
+                <p>Capacítate de forma remota para convertirse en ingeniero de software o científico de datos.</p>
+								<a href="#" class="text-light border-bottom border-width-2 fw-bold">Aplicar ahora</a><i class="icon-line-chevron-right ms-1" style="position: relative; top: 2px;"></i>
+							</div>
+						</div>
+						<div class="row justify-content-between col-mb-30">
+							<div class="col-sm-6 col-lg-3 pe-lg-4">
+								<h3 class="nott ls0 h6 fw-semibold">Casos prácticos</h3>
+								<p class="text-white-50 mt-3 fw-normal">Nuestros estudiantes se gradúan
+                  con más de 200 horas de
+                  experiencia técnica, la cual se
+                  adquiere con la realización de
+                  proyectos grupales y la creación
+                  de productos reales propuestos a
+                  empresas del sector.</p>
+							</div>
+
+							<div class="col-sm-6 col-lg-3 pe-lg-4">
+								<h3 class="nott ls0 h6 fw-semibold">Inversión justa</h3>
+								<p class="text-white-50 mt-3 fw-normal">¡Una inversión que cambiará tu
+                  vida! Costo accesible y justo:
+                  menos de la mitad que otras
+                  universidades.</p>
+							</div>
+
+							<div class="col-sm-6 col-lg-3 pe-lg-4">
+								<h3 class="nott ls0 h6 fw-semibold">Aprende de los mejores</h3>
+								<p class="text-white-50 mt-3 fw-normal">Aprende directamente de aquellos
+                  que ya lo han hecho a través de
+                  casos de la vida real de
+                  emprendedores, empresarios y
+                  profesionistas exitosos.</p>
+							</div>
+
+							<div class="col-sm-6 col-lg-3">
+								<h3 class="nott ls0 h6 fw-semibold">Programa Digital</h3>
+								<p class="text-white-50 mt-3 fw-normal">Aprende en cualquier momento,
+                  en cualquier lugar, a tu propio
+                  ritmo a través de un programa
+                  académico 100% en línea.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+        <!--1. Termina que ofrecemos-->
+        <!-- 2. Construye tus proyectos
+      ============================================= -->
+        <div class="container mt-6">
+          <div class="container text-center">
+            <h2 class="display-4 fw-normal">
+              Construye
+              <span
+                data-animate="svg-underline-animated"
+                class="svg-underline nocolor"
+                ><span>proyectos</span></span
+              >
+              Reales
+            </h2>
+
+            <p>
+              Nuestro método de enseñanza se basa en el entorno colaborativo,
+              basado en proyectos del mundo real, donde los estudiantes
+              construirán productos reales. Durante el programa, el alumno
+              será capaz de desarrollar proyectos reales de manera mensual
+              propuestos por empresas del sector. Todas nuestras clases son
+              remotas e interactivas.
+            </p>
+          </div>
+          <div id="proyecto" class="row justify-content-center col-mb-50" />
+        </div>
+        <!-- Seccion construye proyectos reales -->
+                <!--Termina conoce a tus maestros-->
+                <div id="aprende-mejores" class="section bg-transparent my-0 pb-1">
+                  <div class="container text-center mw-md topmargin bottommargin">
+                      <h2 class="display-4 fw-normal">
+                        Aprende de los
+                        <span
+                          data-animate="svg-underline-animated"
+                          class="svg-underline nocolor"
+                          ><span> mejores</span></span
+                        >
+                      </h2>
+                      <p>¡Checa a algunos de nuestros mentores explicarte que verás con ellos en tus clases!</p>
+                  </div>
+                  <div id="oc-teachers" class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Santiago Garcia.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Santiago Garcia Rey</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">CEO de Iexe Tec</div>
+                              <div class="testi-content">
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/An%C3%A1lisis+del+Entorno_Santiago+Garc%C3%ADa.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Angelica+Castellanos.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Angélica Castellanos</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">MBA Harvard Business School, COO de Konfio</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Liderando+Organizaciones_Ang%C3%A9lica+Castellanos.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Barbara+Gonzalez.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Barbára González</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">Head of Finance de Bitso</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Fintech_B%C3%A1rbara+Gonz%C3%A1lez.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Bernardo+Garza.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Bernardo Garza</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">CEO de Servnet</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Transformacion+digital_Bernardo+Garza.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Edmundo+Monta%C3%B1o.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Edmundo Montaño</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">MBA Harvard Business School, Country Head de Drip Capital</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Construyendo+y+Liderando+Equipos_Edmundo+Monta%C3%B1o.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Fernando+P%C3%A9rez.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Fernando Pérez Gavilán</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">MPP de JFK Harvard School of Public Policy</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                            <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Estrategia+y+ejecuci%C3%B3n+empresarial_Fernando+P%C3%A9rez.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.233)), url('https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/foto_Andres+Cuevas.jpg') no-repeat center center / cover;">
+                        <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                          <div class="col-md-8">
+                            <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                              <h2 class="mb-1">Andrés Cuevas</h2>
+                              <div class="testi-meta ls1 mb-4 text-light fw-normal">Office Head Prudential Credit Markets</div>
+                              <div class="testi-content">
+                                
+                              </div>
+                            </div>
+                            <div class="social-icons topmargin-sm">
+                              <a href="https://www.facebook.com/semicolonweb/" target="_blank" class="social-icon si-facebook si-small si-light">
+                                <i class="icon-linkedin"></i><i class="icon-linkedin"></i>
+                              </a>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                              <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/videos-mba/Finanzas+corporativas_Andr%C3%A9s+Cuevas.mp4" data-lightbox="iframe" class="play-icon"><i class="icon-play1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <!-- 6. Conoce a tus maestros
+      ============================================= -->
+        <div
+        class="container mt-6"
+        style="--custom-bg: var(--themecolor)"
+      >
+          <div class="container text-center mw-md topmargin bottommargin">
+            <div id="oc-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-pagi="false" data-items-xs="1" data-items-sm="2" 
+data-items-md="3" data-items-lg="4">
+            <!--arturo-->
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="https://static.iexetec.com/perfiles-maestros/admer-valdivieso.html">
+                  <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/admer-valdivieso.png" alt="Shake It!">
+                </a>
+                <div class="bg-overlay" data-lightbox="gallery">
+                  <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                    <a href="https://static.iexetec.com/perfiles-maestros/admer-valdivieso.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                  </div>
+                  <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                </div>
+              </div>
+              <div class="portfolio-desc">
+                <h3><a href="https://static.iexetec.com/perfiles-maestros/admer-valdivieso.html">Admer Valdivieso</a></h3>
+                <span><a href="https://static.iexetec.com/perfiles-maestros/admer-valdivieso.html">Especialista de Análitica e Ingeniería de Datos |
+                  Grupo Modelo</a></span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="#">
+                  <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/alejandro-hernandez.png" alt="Shake It!">
+                </a>
+                <div class="bg-overlay" data-lightbox="gallery">
+                  <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                    <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                  </div>
+                  <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                </div>
+              </div>
+              <div class="portfolio-desc">
+                <h3><a href="#">Alejandro Hernández Farías</a></h3>
+                <span><a href="#">Innovation & Analytics Manager | Grupo
+                  Modelo</a></span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="https://static.iexetec.com/perfiles-maestros/arturo-marquez.html">
+                  <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/arturo-marquez.png" alt="Shake It!">
+                </a>
+                <div class="bg-overlay" data-lightbox="gallery">
+                  <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                    <a href="https://static.iexetec.com/perfiles-maestros/arturo-marquez.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                  </div>
+                  <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                </div>
+              </div>
+              <div class="portfolio-desc">
+                <h3><a href="https://static.iexetec.com/perfiles-maestros/arturo-marquez.html">Arturo Márquez Flores</a></h3>
+                <span><a href="https://static.iexetec.com/perfiles-maestros/arturo-marquez.html">Machine Learning Specialist | Bitso</a></span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a href="https://static.iexetec.com/perfiles-maestros/federico-riveroll.html">
+                  <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/federico-riveroll.png" alt="Shake It!">
+                </a>
+                <div class="bg-overlay" data-lightbox="gallery">
+                  <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                    <a href="https://static.iexetec.com/perfiles-maestros/federico-riveroll.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                  </div>
+                  <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                </div>
+              </div>
+              <div class="portfolio-desc">
+                <h3><a href="https://static.iexetec.com/perfiles-maestros/federico-riveroll.html">Federico Riveroll</a></h3>
+                <span><a href="https://static.iexetec.com/perfiles-maestros/federico-riveroll.html">Gerente de Analítica e Innovación</a></span>
+              </div>
+            </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/frida-geyne.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/frida-geyne.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/frida-geyne.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/frida-geyne.html">Frida Geyne</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/frida-geyne.html">Gerente de Ciencia de Datos | Nielsen</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/gabriela-vargas.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/gabriela-vargas.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/gabriela-vargas.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/gabriela-vargas.html">Gabriela Vargas</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/gabriela-vargas.html">Operations Intelligence Manager</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/javier-mondragon.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/javier-mondragon.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/javier-mondragon.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/javier-mondragon.html">Javier Mondragón</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/javier-mondragon.html">Data Analyst | Bitso</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/jorge-manjarrez.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/wilmer-pereira.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/jorge-manjarrez.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/jorge-manjarrez.html">Jorge Manjarres</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/jorge-manjarrez.html">Profesor e investigador en Ciencias en
+                    Computación</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/liliana-millan.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/liliana-millan.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/liliana-millan.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/liliana-millan.html">Liliana Millán</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/liliana-millan.html">Technical Mentor, Imperial College Londo</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/silvia-ariza.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/silvia-ariza.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/silvia-ariza.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/silvia-ariza.html">Silvia Ariza</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/silvia-ariza.html">Chief Data Scientist | Didi</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://static.iexetec.com/perfiles-maestros/salvador-garcia.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/salvador-garcia.png" alt="Shake It!">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/salvador-garcia.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/salvador-garcia.html">Salvador García</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/salvador-garcia.html">Data Science Director en Grupo Salinas</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="phttps://static.iexetec.com/perfiles-maestros/rodolfo-conde.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/miaa/maestros/rodolfo-conde.png" alt="Open Imagination">
+                  </a>
+                  <div class="bg-overlay" data-lightbox="gallery">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="https://static.iexetec.com/perfiles-maestros/rodolfo-conde.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                      <a href="https://static.iexetec.com/perfiles-maestros/rodolfo-conde.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://static.iexetec.com/perfiles-maestros/rodolfo-conde.html">Rodolfo Conde</a></h3>
+                  <span><a href="https://static.iexetec.com/perfiles-maestros/rodolfo-conde.html">Profesor de licenciatura y Máster, ITAM</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/santiago-garcia.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/circulos/santiago-circle.png" alt="Open Imagination">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
+                      <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/santiago-garcia.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/santiago-garcia.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/santiago-garcia.html">Santiago García Rey</a></h3>
+                  <span><a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/santiago-garcia.html">CEO de Iexe Tec</a></span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="portfolio-single.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/circulos/fernando-circle.png" alt="Locked Steel Gate">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
+                      <a href="https://static.iexetec.com/mba/liderando_equipos_em.mp4" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="portfolio-single.html">Fernando Pérez Gavilán</a></h3>
+                  <span><a href="#">MPP de JFK Harvard School of Public Policy</a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="#">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/circulos/edmundo-circle.png" alt="Mac Sunglasses">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
+                      <a href="https://static.iexetec.com/mba/liderando_equipos_em.mp4" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="#">Edmundo Montaño</a></h3>
+                  <span><a href="#">MBA Harvard Business School, Country Head de Drip Capital
+                  </a></span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/barbara-gonzalez.html">
+                    <img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/maestros/circulos/barbara-circle.png" alt="Console Activity">
+                  </a>
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
+                      <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/barbara-gonzalez.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                      <a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/barbara-gonzalez.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="350"></div>
+                  </div>
+                </div>
+                <div class="portfolio-desc">
+                  <h3><a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/barbara-gonzalez.html">Bárbara González</a></h3>
+                  <span><a href="https://s3.us-east-2.amazonaws.com/static.iexetec/perfiles-maestros/barbara-gonzalez.html">Head of Finance de Bitso</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1. Convenios Académicos
+        ============================================= -->
+        <div id="convenios-academicos" class="container mt-6">
+          <div class="container text-center mw-md topmargin bottommargin">
+            <h2 class="display-4 fw-normal">
+              Convenios<span
+                data-animate="svg-underline-animated"
+                class="svg-underline nocolor"
+                ><span>Académicos</span></span
+              >
+            </h2>
+
+            <div class="clear"></div>
+
+            <!-- Logos de Convenios -->
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div
+                  class="
+                    row
+                    justify-content-center
+                    align-items-center
+                    text-center
+                    mx-auto
+                  "
+                >
+                  <div class="col center ">
+                    <img
+                      src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/convenios/Logos2_Convenios-Recovered_16.jpg"
+                      alt=""
+                      width="100"
+                    />
+                  </div>
+                  <div class="col center ">
+                    <img
+                      src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/convenios/Logos2_Convenios-Recovered_15.jpg"
+                      alt=""
+                      width="100"
+                    />
+                  </div>
+                  <div class="col center ">
+                    <img
+                      src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/convenios/Logos2_Convenios-Recovered_05.jpg"
+                      alt=""
+                      width="100"
+                    />
+                  </div>
+                  <div class="col center ">
+                    <img
+                      src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/convenios/Logos2_Convenios-Recovered_07.jpg"
+                      alt=""
+                      width="100"
+                    />
+                  </div>
+                  <div class="col center ">
+                    <img
+                      src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/convenios/Logos2_Convenios-Recovered_09.jpg"
+                      alt=""
+                      width="100"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="
+                    row
+                    justify-content-center
+                    align-items-center
+                    mx-auto
+                    text-center
+                    mt-3
+                  "
+                >
+                </div>
+              </div>
+            </div>
+            <!-- Logos de países -->
+            <div id="oc-clients"
+              class="owl-carousel image-carousel carousel-widget owl-loaded owl-drag with-carousel-dots mt-4"
+              data-margin="20" data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4"
+              data-items-lg="5" data-items-xl="6">
+              <h4>
+                En IEXE universidad, el conocimiento no conoce fronteras, por ello tenemos presencia en:
+              </h4>
+              <div class="owl-stage-outer">
+                <div class="owl-stage"
+                  style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2194px;">
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/Chile.png" alt="Clients"></a></div>
+                  </div>
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/United+States.png" alt="Clients"></a></div>
+                  </div>
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/Argentina.png" alt="Clients"></a></div>
+                  </div>
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/Colombia.png" alt="Clients"></a></div>
+                  </div>
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/Ecuador.png" alt="Clients"></a></div>
+                  </div>
+                  <div class="owl-item active" >
+                    <div class="oc-item"><a href="#"><img src="https://s3.us-east-2.amazonaws.com/static.iexetec/sitio-general/paises/Mexico.png" alt="Clients"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                    class="icon-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i
+                    class="icon-angle-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+        <!-- Section End -->
+        <!-- Sección de bolsa de trabajo-->
+        <div class="section custom-bg mt-3 mb-0">
+          <div class="container text-center">
+            <h2 class="display-4 fw-normal">
+              Date a
+              <span
+                data-animate="svg-underline-animated"
+                class="svg-underline nocolor"
+                ><span>conocer</span></span
+              >
+              en nuestra Plataforma
+            </h2>
+            <p>
+              Una bolsa de trabajo donde integramos los proyectos que han
+              construido nuestros alumnos en equipos colaborativos, sesiones
+              en vivo con mentores profesionales y conexiones con
+              oportunidades laborales en empresas reales.
+            </p>
+          </div>
+          <div id="showcase" class="row justify-content-center col-mb-50 pb-2"/>
+        </div>
+        <!--termina sección bolsa de trabajo-->
+        <!-- Blog
+				============================================= -->
+				<div id="blog" class="section section-product m-0" style="padding-top: 30px; background-color:#fff;">
+					<div class="container clearfix">
+						<div class="section-product-image" style="background-color: #fff;">
+							<img src="images/blog.png" alt="Image">
+						</div>
+						<div class="section-product-content" data-bottom-top="transform: translateY(0px);" data-top-bottom="transform: translateY(-100px);">
+              <h3 class="h1 mb-4 fw-normal">
+                Conoce
+                <span
+                  data-animate="svg-underline-animated"
+                  class="svg-underline nocolor"
+                  ><span>nuestro</span></span
+                >
+                <span
+                  data-animate="svg-underline-animated"
+                  data-delay="300"
+                  class="svg-underline nocolor"
+                  ><span>Blog</span></span
+                >
+              </h3>
+							<p>Entérate de noticias, eventos e información que te puede interesar.</p>
+							<div class="row justify-content-center clearfix">
+								<div class="col-6 align-items-center">
+									<a href="https://www.iexe.edu.mx/blog" class="button button-border button-circle button-fill fill-from-bottom button-dark button-black nott fw-normal m-0"><span>Visita nuestro Blog</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Inscripciones
+				============================================= -->
+        <div id="inscripciones" class="section pt-5 bg-color" style="padding: 100px 0; background-image: linear-gradient(to bottom, #1C4768 0%, #1B3E59 80%, #FFF 80%);">
+        <div class="container clearfix">
+          <div class="row mx-auto dotted-bg" style="max-width: 740px">
+            <div class="col-md-12">
+              <div class="center dark mb-5">
+                <i class="icon-line-help h1 "></i>
+                <h2 class="fw-bold mb-2">Inscripciones Abiertas</h2>
+                <p class="fw-normal mb-2 lead">Inscríbete a cualquiera de nuestros programas</p>
+              </div>
+
+              <div class="card bg-white shadow-lg border-0">
+                <div class="card-body p-5">
+                  <div class="form-widget" data-loader="button" data-alert-type="inline">
+
+                    <div class="form-result"></div>
+
+                    <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post" enctype="multipart/form-data">
+                      <div class="form-process"></div>
+                      <div class="col-12 form-group mb-4">
+                        <label>Nombre:</label>
+                        <input type="text" name="landing-enquiry-name" id="landing-enquiry-name" class="form-control form-control-lg required" value="" placeholder="Tu nombre">
+                      </div>
+                      <div class="col-12 form-group mb-4">
+                        <label>Correo:</label>
+                        <input type="email" name="landing-enquiry-email" id="landing-enquiry-email" class="form-control form-control-lg required" value="" placeholder="correo@correo.com">
+                      </div>
+                      <div class="col-12 form-group mb-4">
+                        <label>Programa:</label><br>
+                        <div class="input-group input-group-lg">
+                          <select id="inputState" class="form-select required" name="landing-enquiry-idd" id="landing-enquiry-idd">
+                            <option selected="">Escoge...</option>
+                            <option value="MBAT">MBA Tec</option>
+                            <option value="MSEC">MSEC</option>
+                            <option value="MITIC">MITI</option>
+                            <option value="MCDA">MCDA</option>
+                            <option value="MIAA">MIAA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 form-group mb-4">
+                        <label>Teléfono:</label><br>
+                        <div class="input-group input-group-lg">
+                          <select class="custom-select required" name="landing-enquiry-idd" id="landing-enquiry-idd" style="max-width: 80px;">
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <option value="+66">+66</option>
+                            <option value="+62">+62</option>
+                            <option value="+61">+61</option>
+                            <option value="+852">+852</option>
+                            <option value="+65">+61</option>
+                            <option value="+33">+61</option>
+                            <option value="+49">+49</option>
+                          </select>
+                          <input type="text" name="landing-enquiry-phone" id="landing-enquiry-phone" class="form-control form-control-lg required" value="" placeholder="+52 123456">
+                        </div>
+                      </div>
+                      <div class="col-12 d-none">
+                        <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck" value="" />
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" name="landing-enquiry-submit" class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Aplicar ahora</button>
+                      </div>
+
+                      <input type="hidden" name="prefix" value="landing-enquiry-">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--FAQ-->
+        <div class="container clearfix mt-6" id="q-a">
+          <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 text-center mb-6">
+              <h2 class="display-4 fw-normal">
+                Preguntas
+                <span
+                  data-animate="svg-underline-animated"
+                  class="svg-underline nocolor"
+                  ><span>frecuentes</span></span
+                >
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div class="clear"></div>
+
+              <div id="faqs" class="faqs">
+                <div class="toggle faq pb-3 mb-3 faq-marketplace faq-legal">
+                  <div class="toggle-header">
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-question-sign"></i>
+                      <i class="toggle-open icon-question-sign"></i>
+                    </div>
+                    <div class="toggle-title pl-1">
+                      ¿Recibiré un certificado al completar un programa IEXE Tec?
+                    </div>
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-line-chevron-down"></i>
+                      <i class="toggle-open icon-line-chevron-up"></i>
+                    </div>
+                  </div>
+                  <div class="toggle-content pl-4">
+                    Si. Una vez que complete el 100% de las lecciones y apruebe todas las pruebas, recibirá su Finisher
+certificado a través de la tecnología blockchain. Luego puede agregarlo a su perfil de LinkedIn y
+reanudar. Fortalecerá tu perfil profesional.
+                  </div>
+                </div>
+
+                <div class="toggle faq pb-3 mb-3 faq-authors faq-marketplace">
+                  <div class="toggle-header">
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-comments-alt"></i>
+                      <i class="toggle-open icon-comments-alt"></i>
+                    </div>
+                    <div class="toggle-title pl-1">
+                      ¿Cuáles son las diferencias en comparación con un curso, Máster O Maestría en línea de otro tipo?
+                    </div>
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-line-chevron-down"></i>
+                      <i class="toggle-open icon-line-chevron-up"></i>
+                    </div>
+                  </div>
+                  <div class="toggle-content pl-4">
+                    Entre el vasto universo de cursos en línea:
+● Por lo general, se centran en un solo nicho (p. Ej., Emprendedores).
+● La mayoría de ellos no están bien estructurados y los aprendizajes suelen ser deficientes.
+● Con demasiada frecuencia, los profesores son "gurús" que quieren vender su historia.
+● Carecen de una propuesta de valor.
+● No hay participación y comunidad sin conexión
+Los programas de IEXE Tec ofrece mucho más que una experiencia de aprendizaje en línea. Una vez que se convierte en un programa o Máster de IEXE Tec, no solo tiene acceso a un excelente programa, sino que se une a una comunidad próspera de personas dispuestas a aprender y lograr sus objetivos profesionales.
+                  </div>
+                </div>
+
+                <div class="toggle faq pb-3 mb-3 faq-authors">
+                  <div class="toggle-header">
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-lock3"></i>
+                      <i class="toggle-open icon-lock3"></i>
+                    </div>
+                    <div class="toggle-title pl-1">
+                      ¿IEXE Tec tiene una acreditación oficial?
+                    </div>
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-line-chevron-down"></i>
+                      <i class="toggle-open icon-line-chevron-up"></i>
+                    </div>
+                  </div>
+                  <div class="toggle-content pl-4">
+                    NO. No estamos acreditados oficialmente por ninguna institución o agencia gubernamental. Y estamos orgullosos de ello. Creemos firmemente que la acreditación restringe la flexibilidad, lo que conduce a aprendizajes obsoletos, estancamiento curricular y programas ineficientes.
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    toggle
+                    faq
+                    pb-3
+                    mb-3
+                    faq-authors faq-legal faq-authors
+                  "
+                >
+                  <div class="toggle-header">
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-download-alt"></i>
+                      <i class="toggle-open icon-download-alt"></i>
+                    </div>
+                    <div class="toggle-title pl-1">
+                      Si IEXE Tec no está acreditado oficialmente, ¿está bien reconocido por las empresas, los departamentos de recursos humanos, etc.?
+                    </div>
+                    <div class="toggle-icon">
+                      <i class="toggle-closed icon-line-chevron-down"></i>
+                      <i class="toggle-open icon-line-chevron-up"></i>
+                    </div>
+                  </div>
+                  <div class="toggle-content pl-4">
+                    Sí y la prueba es que empresas punteras como Google, EY, Accenture, Santander, Inditex o Heineken han confiado en IEXE Tec para formar a sus equipos.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .postcontent end -->
+        </div>
+        <!--Termina FAQ-->
+      </div>
+    </section>
+    <!-- #content end -->
+
+    <!-- Footer
+  ============================================= -->
+    <footer id="footer" class="border-0 bg-white">
+      <div class="container">
+        <!-- Footer Widgets
+      ============================================= -->
+        <div class="footer-widgets-wrap py-lg-6">
+          <div class="row col-mb-30">
+            <!-- Footer Col 1 -->
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="widget widget_links widget-li-noicon">
+                <h4 class="ls0 nott">Redes Sociales</h4>
+
+                <ul class="list-unstyled iconlist ms-0">
+                  <li>
+                    <a
+                      href="https://facebook.com/semicolonweb"
+                      target="_blank"
+                      ><i class="icon-linkedin"></i> Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://instagram.com/semicolonweb"
+                      target="_blank"
+                      ><i class="icon-instagram"></i> Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/__semicolon" target="_blank"
+                      ><i class="icon-twitter"></i> Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://wa.me/00112233344"
+                      ><i class="icon-whatsapp"></i> WhatsApp</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Footer Col 2 -->
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="widget widget_links widget-li-noicon">
+                <h4 class="ls0 nott">Programas</h4>
+
+                <ul class="list-unstyled iconlist ms-0">
+                  <li>
+                    <a href="index.html"
+                      >Máster en Inteligencia Artificial Aplicada</a
+                    >
+                  </li>
+                  <li>
+                    <a href="demo-furniture-about.html"
+                      >Máster en Ciencia de Datos Aplicada</a
+                    >
+                  </li>
+                  <li>
+                    <a href="demo-furniture-contact.html"
+                      >Máster en Tecnologías de la Información</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Footer Col 6 -->
+            <div class="col-lg-8 col-md-3 col-8">
+              <div
+                class="widget subscribe-widget clearfix"
+                data-loader="button"
+              >
+                <h4>Estudia con nosotros</h4>
+                <h5 class="font-body op-04">
+                  <strong>Manda tus datos</strong> y acelera tu carrera
+                  profesional::
+                </h5>
+                <div class="widget-subscribe-form-result"></div>
+                <form
+                  id="widget-subscribe-form"
+                  action="include/subscribe.php"
+                  method="post"
+                  class="mb-0"
+                >
+                  <div class="input-group">
+                    <input
+                      type="name"
+                      id="widget-subscribe-form-name"
+                      name="widget-subscribe-form-name"
+                      class="form-control required name"
+                      placeholder="Tu nombre"
+                    />
+                    <input
+                      type="phone"
+                      id="widget-subscribe-form-phone"
+                      name="widget-subscribe-form-phone"
+                      class="form-control required phone"
+                      placeholder="Tu teléfono"
+                    />
+                    <input
+                      type="email"
+                      id="widget-subscribe-form-email"
+                      name="widget-subscribe-form-email"
+                      class="form-control required email"
+                      placeholder="Ingresa tu correo electrónico"
+                    />
+                    <button
+                      class="btn btn-secondary bg-secondary px-3 input-group-text"
+                      type="submit"
+                    >
+                      Mandar mis datos
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .footer-widgets-wrap end -->
+      </div>
+
+      <!-- Copyrights
+    ============================================= -->
+      <div id="copyrights" class="py-3 bg-color-light">
+        <div class="container">
+          <div class="d-flex justify-content-between op-04">
+            <span
+              >&copy; 2021 Todos los Derechos Reservados por IEXE Tec.</span
+            >
+            <div class="copyright-links">
+              <a href="#">Términos de uso</a> /
+              <a href="#">Política de Privacidad</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #copyrights end -->
+    </footer>
+    <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="bg-color op-07 h-op-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="#FFF"
+        viewBox="0 0 256 256"
+      >
+        <rect width="256" height="256" fill="none"></rect>
+        <polygon points="48 208 128 128 208 208 48 208" opacity="0.2"></polygon>
+        <polygon
+          points="48 208 128 128 208 208 48 208"
+          fill="none"
+          stroke="#FFF"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polygon>
+        <polyline
+          points="48 128 128 48 208 128"
+          fill="none"
+          stroke="#FFF"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+      </svg>
+    </div>
+
+    <!-- JavaScripts
+	============================================= -->
+  <script src="js/jquery.js"></script>
+  <script src="js/plugins.min.js"></script>
+  <script src="js/functions.js"></script>
+    <script src="js/components.js"></script>
+    <script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="include/rs-plugin/js/addons/revolution.addon.liquideffect.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+	<script>
+		var revapi2,
+		tpj;
+		var $ = jQuery.noConflict();
+		(function() {
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
+			function onLoad() {
+				if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+
+				if(tpj("#rev_slider_2_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				}else{
+					revapi2 = tpj("#rev_slider_2_1").show().revolution({
+						sliderType:"standard",
+						jsFileLocation:"include/rs-plugin/js/",
+						sliderLayout:"fullscreen",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							mouseScrollReverse:"default",
+							onHoverStop:"off",
+							arrows: {
+								style:"uranus",
+								enable:true,
+								hide_onmobile:false,
+								hide_onleave:false,
+								tmp:'',
+								left: {
+									h_align:"right",
+									v_align:"bottom",
+									h_offset:80,
+									v_offset:30
+								},
+								right: {
+									h_align:"right",
+									v_align:"bottom",
+									h_offset:20,
+									v_offset:30
+								}
+							}
+						},
+						responsiveLevels:[1200,992,768,576],
+						visibilityLevels:[1200,992,768,576],
+						gridwidth:[1200,992,768,576],
+						gridheight:[868,768,960,720],
+						lazyType:"all",
+						shadow:0,
+						spinner:"off",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"on",
+						fullScreenAutoWidth:"off",
+						fullScreenAlignForce:"off",
+						fullScreenOffsetContainer: "0",
+						fullScreenOffset: "",
+						disableProgressBar:"off",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}; /* END OF revapi call */
+
+				RsLiquideffectAddOn(tpj, revapi2);
+
+				if(typeof ExplodingLayersAddOn !== "undefined") ExplodingLayersAddOn(tpj, revapi2);
+			}; /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
+  <script>
+    var input = document.querySelector('#telefono');
+    var iti = intlTelInput(input);
+    var number = iti.getNumber();
+    numero = number.replace('+', '');
+    window.intlTelInput(input, {
+      // any initialisation options go here
+      utilsScript: 'js/utils.js',
+      customPlaceholder: function (
+        selectedCountryPlaceholder,
+        selectedCountryData
+      ) {
+        return 'e.g. ' + selectedCountryPlaceholder;
+      },
+    });
+  </script>
+  <script>
+    var input = document.querySelector('#tel');
+    var iti = intlTelInput(input);
+    var number = iti.getNumber();
+    numero = number.replace('+', '');
+    window.intlTelInput(input, {
+      // any initialisation options go here
+      utilsScript: 'js/utils.js',
+      customPlaceholder: function (
+        selectedCountryPlaceholder,
+        selectedCountryData
+      ) {
+        return 'e.g. ' + selectedCountryPlaceholder;
+      },
+    });
+  </script>
+
+  <script>
+    jQuery(document).ready(function ($) {
+      var lastScrollTop = 0;
+      window.addEventListener('scroll', function (event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+          jQuery('#header.sticky-on-scrollup').removeClass(
+            'show-sticky-onscroll'
+          ); // Down Scroll
+        } else {
+          jQuery('#header.sticky-on-scrollup').addClass(
+            'show-sticky-onscroll'
+          ); // Up Scroll
+        }
+        lastScrollTop = st;
+      });
+    });
+  </script>
+
+  <!--FORMULARIOS DE REGISTRO DE LEADS-->
+  <script>
+    $('#requestACall').submit(function () {
+      submit_form($('#requestACall'));
+      document.getElementById('requestACall').reset();
+      return false;
+    });
+    $('#requestBCall').submit(function () {
+      submit_form($('#requestBCall'));
+      document.getElementById('requestBCall').reset();
+      return false;
+    });
+    $('#requestCCall').submit(function () {
+      submit_form($('#requestCCall'));
+      document.getElementById('requestCCall').reset();
+      return false;
+    });
+
+    function submit_form(form) {
+      // Aquí puedes meter validaciones de campos
+      var countryData = iti.getSelectedCountryData();
+      var pais = countryData['iso2'];
+      var extra_params =
+        '&adicional=pais:%20' +
+        pais +
+        '&programa=MCDA' +
+        '&referencia=https://mcda.iexe.edu.mx/' +
+        '&charifaz=' +
+        get_browser();
+      var request_data = form.serialize() + extra_params;
+      console.log('request_data' + request_data);
+      $.ajax({
+        type: 'POST',
+        url: 'https://api.redisoft.dev/Leads/web',
+        data: request_data,
+        beforeSend: function () {
+          // Acciones antes de lanzar la solicitud
+          $('#submit').attr('disabled', 'disabled');
+          $('.modal-body').css('opacity', '.5');
+        },
+        success: function (data) {
+          console.log(data);
+          if (data == 'true') {
+            $('#inputName').val('');
+            $('#inputEmail').val('');
+            $('#tel').val('');
+            $('.statusMsg').html(
+              '<span style="color:#17938F;font-weight: 700;font-size: 18px;">¡Gracias por enviar tus datos!</span>',
+            );
+          } else {
+            $('.statusMsg').html(
+              '<span style="color:#DB1F2D;font-weight: 700;font-size: 18px;">Hubo un problema, porfavor intenta de nuevo</span>',
+            );
+          }
+          $('.submit').removeAttr('disabled');
+          $('.modal-body').css('opacity', '');
+        }
+      });
+    }
+
+    function get_browser() {
+      var nVer = navigator.appVersion;
+      var nAgt = navigator.userAgent;
+      var browserName = navigator.appName;
+      var fullVersion = '' + parseFloat(navigator.appVersion);
+      var nameOffset, verOffset, ix;
+
+      // In Opera, the true version is after "Opera" or after "Version"
+      if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+        browserName = 'Opera';
+        fullVersion = nAgt.substring(verOffset + 6);
+        if ((verOffset = nAgt.indexOf('Version')) != -1)
+          fullVersion = nAgt.substring(verOffset + 8);
+      }
+      // In MSIE, the true version is after "MSIE" in userAgent
+      else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+        browserName = 'Microsoft Internet Explorer';
+        fullVersion = nAgt.substring(verOffset + 5);
+      }
+      // In Chrome, the true version is after "Chrome"
+      else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+        browserName = 'Chrome';
+        fullVersion = nAgt.substring(verOffset + 7);
+      }
+      // In Safari, the true version is after "Safari" or after "Version"
+      else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+        browserName = 'Safari';
+        fullVersion = nAgt.substring(verOffset + 7);
+        if ((verOffset = nAgt.indexOf('Version')) != -1)
+          fullVersion = nAgt.substring(verOffset + 8);
+      }
+      // In Firefox, the true version is after "Firefox"
+      else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+        browserName = 'Firefox';
+        fullVersion = nAgt.substring(verOffset + 8);
+      }
+      // In most other browsers, "name/version" is at the end of userAgent
+      else if (
+        (nameOffset = nAgt.lastIndexOf(' ') + 1) <
+        (verOffset = nAgt.lastIndexOf('/'))
+      ) {
+        browserName = nAgt.substring(nameOffset, verOffset);
+        fullVersion = nAgt.substring(verOffset + 1);
+        if (browserName.toLowerCase() == browserName.toUpperCase()) {
+          browserName = navigator.appName;
+        }
+      }
+      // trim the fullVersion string at semicolon/space if present
+      if ((ix = fullVersion.indexOf(';')) != -1)
+        fullVersion = fullVersion.substring(0, ix);
+      if ((ix = fullVersion.indexOf(' ')) != -1)
+        fullVersion = fullVersion.substring(0, ix);
+
+      majorVersion = parseInt('' + fullVersion, 10);
+      if (isNaN(majorVersion)) {
+        fullVersion = '' + parseFloat(navigator.appVersion);
+      }
+      return browserName + ' ' + fullVersion;
+    }
+  </script>
+  <script>
+		// Owl Carousel Scripts
+		jQuery(window).on( 'pluginCarouselReady', function(){
+			$('#oc-teachers').owlCarousel({
+				items: 1,
+				margin: 30,
+				nav: true,
+				navText: ['<i class="icon-line-arrow-left"></i>','<i class="icon-line-arrow-right"></i>'],
+				dots: false,
+				smartSpeed: 300,
+				stagePadding: 60,
+				responsive:{
+					768: { stagePadding: 100, margin: 30, items: 1 },
+					991: { stagePadding: 100, margin: 40, smartSpeed: 400, items: 2 },
+					1200: { stagePadding: 100, margin: 40, smartSpeed: 400, items: 2}
+				},
+			});
+		});
+	</script>
+  </body>
+</html>

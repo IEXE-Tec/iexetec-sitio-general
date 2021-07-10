@@ -1,0 +1,269 @@
+/* ----------------------------------------------------------------
+	Canvas: Yoga
+-----------------------------------------------------------------*/
+
+:root {
+	--themecolor: #1C4768;
+	--themecolorrgba: 126, 150, 128;
+}
+
+@media (min-width: 992px) {
+@-webkit-keyframes fadeInUp {
+  from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
+  }
+}
+
+
+.swiper-button-disabled { display: none; }
+
+.slider-arrow-left,
+.slider-arrow-right {
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border-radius: 50%;
+	left: 20px;
+	right: auto;
+}
+.slider-arrow-right {
+	right: 20px;
+	left: auto;
+}
+
+.slider-arrow-left i,
+.slider-arrow-right i {
+	color: #1C4768;
+	color: var(--themecolor, #1C4768);
+	text-shadow: none;
+	height: 50px;
+	line-height: 48px;
+	margin: 0;
+}
+
+.slider-arrow-right i { margin-right: 2px; }
+
+.feature-box h3 {
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.section-img img { width: 100%; border: 10px solid #FFF; }
+
+.section-yogas .card {
+	padding: 35px;
+	background-image: url("images/card-wave-2.svg");
+	background-repeat: repeat-x;
+	background-position: 0% 101%;
+	background-size: cover;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border: 0;
+	border-top: 6px solid #1C4768;
+	border-top-color: var(--themecolor, #1C4768);
+}
+
+.testi-content p {
+	line-height: 1.95;
+	color: rgba(255,255,255, 0.7);
+	font-style: normal;
+}
+
+.play-icon {
+	transition: transform .3s ease;
+}
+
+.play-icon:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.play-icon i {
+	width: 80px;
+	height: 80px;
+	line-height: 81px;
+	font-size: 28px;
+	padding-left: 5px;
+	text-align: center;
+	border-radius: 50%;
+	color: #000;
+	background-color: #FFF;
+	z-index: 2;
+	transition: all .3s ease;
+}
+
+.play-icon:hover i {
+	background-color: #1C4768;
+	background-color: var(--themecolor, #1C4768);
+	color: #FFF;
+}
+
+.owl-carousel .jumbotron { height: 400px; }
+
+.owl-item .jumbotron {
+	opacity: .5;
+	transform: scale(0.95);
+	transition: all .5s ease;
+}
+
+.owl-item .jumbotron-text {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all .4s .2s ease;
+}
+
+.owl-item.active .jumbotron,
+.owl-item.active .jumbotron-text {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Owl Carousel - Controls - Arrows
+-----------------------------------------------------------------*/
+#oc-teachers .owl-nav [class*=owl-] {
+	opacity: 1;
+	left: 61px !important;
+	height: 60px;
+	line-height: 60px;
+	border: none;
+	color: #333;
+	background-color: transparent;
+	font-size: 28px;
+	border-radius: 0;
+}
+
+#oc-teachers.owl-nav .owl-next {
+	left: auto;
+	right: -61px;
+}
+
+#oc-teachers .owl-nav .owl-next {
+	left: auto !important;
+	right: 62px !important;
+	border-radius: 0;
+}
+
+#oc-teachers .owl-nav [class*=owl-]:hover {
+	transform: scale(1.3);
+	background-color: transparent !important;
+	color: #1C4768 !important;
+	color: var(--themecolor, #1C4768) !important;
+}
+
+.section-schedule .nav-link {
+	position: relative;
+	padding: 15px 20px;
+	font-size: 20px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.1);
+	font-family: "Sansita", sans-serif;
+	border-left: 5px solid transparent;
+	overflow: hidden;
+	color: #444;
+	transition: all .3s ease;
+}
+
+.section-schedule .nav-pills .nav-link.active {
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.2);
+	border-left-color: #1C4768;
+	background-color: #FFF;
+	color: #1C4768;
+}
+
+.section-schedule .nav-link::after {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	bottom: 0;
+	right: 5px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 100% 90%;
+	background-size: 50px 50px;
+	transition: all .3s linear;
+}
+
+.section-schedule .nav-link.active::after,
+.section-schedule .nav-link:hover::after {
+	opacity: .6;
+	background-position: 100% 70%;
+}
+
+.schedule-wrap {
+	position: relative;
+	padding: 30px;
+	border-radius: 4px;
+	background-color: #FFF;
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-wrap::after {
+	content: "";
+	position: absolute;
+	opacity: .07;
+	bottom: 20px;
+	right: 20px;
+	width: 200px;
+	height: 200px;
+	z-index: 0;
+}
+
+.schedule-wrap dt { margin-bottom: 10px; }
+
+.schedule-wrap dt:not(:nth-last-of-type(1)) + dd {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.schedule-wrap dt:nth-last-of-type(1),
+.schedule-wrap dt:nth-last-of-type(1) + dd { margin-bottom: 0px; }
+
+.schedule-time,
+.schedule-desc {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
+.schedule-desc small {
+	display: block;
+	font-size: 13px;
+	opacity: .5;
+	margin-top: 4px;
+}
+
+.schedule-teacher {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	z-index: 2;
+	position: relative;
+}
+
+
+/* Responsive Device more than 992px (.device-md >)
+-----------------------------------------------------------------*/
+@media (min-width: 992px) {
+
+
+	.schedule-wrap dt { margin-bottom: 20px; }
+
+}
